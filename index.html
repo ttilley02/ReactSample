@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="application-root"></div>
+
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+
+<script type="text/babel">
+function App(props) {
+  return (
+  <section>
+    <h1 className='bigName'>{props.children}</h1>
+
+  
+      <main><p>
+        Aspiring Program Manager with experience collaborating with multiple government contractors.  Experienced in negotiations, Proposal analysis and facilitation of team workflows.  Team player looking to join and eventually lead a team in high profile contracted efforts!
+      </p></main>
+
+        <h2>Contact Info:</h2>
+        <ul>
+          <li>Sally S. Student</li>
+          <li><a href="Sallyisverymart987@outlook.com" class = "citygirl"> Email me!</a></li>
+          <li>999.242.4611</li>
+        </ul>
+
+        <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"></img>
+
+
+
+        <h2>Education:</h2>
+        <ul>
+          <li>University Pennsylvania</li>
+          <p>Degree: Masters of Business Administration</p>
+          <li>University of Pennsylvania</li>
+          <p>Degree: BS in Engineering</p>
+        </ul>
+
+        <h2>Experience:</h2>
+        <ul>
+          <li>Boeing: Business Analyst </li>
+          <div>Dallas, TX</div>
+          <div>08/2012 - Current</div>
+                <p> *BLAH BLAH BLAH Filler text for Job Description*</p>
+          <li>Long Island Joe's Crab Shack: Manager 06/2010 - 07/2012</li>
+          <div>Dallas, TX</div>
+          <div>06/2010 - 07/2012</div>
+        <p> *BLAH BLAH BLAH Filler text for Job Description*</p>
+        </ul>
+  </section>
+
+ 
+  );
+}
+
+// Nested elements inside the App
+
+ReactDOM.render(
+  <App>
+    Ilana Glazer 
+  </App>
+    ,
+  document.querySelector('#application-root')
+);
+</script>
+
+</body>
+</html>
